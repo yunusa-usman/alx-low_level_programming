@@ -3,11 +3,12 @@
 /**
  * print_sign - A function that prints a character sign
  * @c: the character to be examined
- * Return: 1 if n is greater than zero
+i * Return: 1 if n is greater than zero
  * 0 if n is zero and -1 if n is less than zero
 */
+
 int print_sign(int n)
-{ 
+{
 	if (n > 0)
 	{
 		_putchar('+');
@@ -16,9 +17,9 @@ int print_sign(int n)
 	else if (n == 0)
 	{
 		_putchar('0');
-		return(0);
+		return (0);
 	}
-	else 
+	else
 	{
 		_putchar('-');
 		return (-1);
