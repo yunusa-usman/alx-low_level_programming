@@ -16,11 +16,15 @@ int i, co;
 for (i = 0; dest[i] != '\0'; i++)
 {
 }
-for (co = 0; co < n; co++)
+for (co = 0; co < n && src[co] != '\0'; co++)
 {
-dest[i + co] = src[co];
+dest[i] = src[co];
 if (src[co] == '\n')
-co = n;
+i++;
+}
+if (co < n)
+{
+dest[i] = '\n';
 }
 return (dest);
 }
